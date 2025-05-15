@@ -1,6 +1,6 @@
 import { CharacterCard } from "./CharacterCard";
 
-export const CharacterCardList = ({ allpeople }) => {
+export const CharacterCardList = ({ allpeople, dispatch }) => {
 
     return (
         <>
@@ -12,6 +12,7 @@ export const CharacterCardList = ({ allpeople }) => {
                                 key={person.uid}
                                 uid={person.uid}
                                 name={person.name}
+                                dispatch={dispatch}
                             />
                         );
                     })

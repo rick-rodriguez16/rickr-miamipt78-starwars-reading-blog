@@ -24,6 +24,7 @@ export const StarWarsLandingPage = () => {
                         <h1>Characters</h1>
                         <CharacterCardList 
                             allpeople={store.allPeople}
+                            dispatch={dispatch}
                         />
                     </div>
                 </div>
